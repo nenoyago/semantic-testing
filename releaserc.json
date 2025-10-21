@@ -1,0 +1,49 @@
+{
+  "branches": [
+    "main",
+    {
+      "name": "beta/*",
+      "prerelease": "beta",
+      "channel": "beta"
+    }
+  ],
+  "plugins": [
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "parserOpts": {
+          "noteKeywords": [
+            "BREAKING CHANGE",
+            "BREAKING CHANGES"
+          ]
+        },
+        "releaseRules": [
+          {
+            "breaking": true,
+            "release": "major"
+          }
+        ]
+      }
+    ],
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "pnpm build"
+      }
+    ],
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "package.json",
+          "CHANGELOG.md"
+        ],
+        "message": "release: 🔖 ${nextRelease.version} \n\n${nextRelease.notes}"
+      }
+    ]
+  ]
+}

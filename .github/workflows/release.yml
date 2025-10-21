@@ -1,0 +1,21 @@
+name: 🚀 Run Semantic Release
+
+on:
+  push:
+    branches:
+      - main
+      - beta/*
+    paths-ignore:
+      - "package.json"
+      - "package-lock.json"
+      - "CHANGELOG.md"
+
+jobs:
+  release:
+    name: 🚀 Semantic Release
+    uses: nenoyago/.github/.github/workflows/semantic-release.yml@main
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    secrets: inherit
