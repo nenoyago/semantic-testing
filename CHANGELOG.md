@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/nenoyago/semantic-testing/compare/v1.2.0...v1.3.0) (2025-10-22)
+
+
+### Features
+
+* title ([48e9f00](https://github.com/nenoyago/semantic-testing/commit/48e9f00350ebf16fab4b786bce4421f796886c8f))
+
 # [1.2.0](https://github.com/nenoyago/semantic-testing/compare/v1.1.0...v1.2.0) (2025-10-21)
 
 
