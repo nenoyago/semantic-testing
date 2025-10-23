@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/nenoyago/semantic-testing/compare/v1.3.0...v1.4.0) (2025-10-23)
+
+
+### Features
+
+* ds ([52804e1](https://github.com/nenoyago/semantic-testing/commit/52804e1a1788e0f5843d6c0f3fc17415a0c6f326))
+
 # [1.3.0](https://github.com/nenoyago/semantic-testing/compare/v1.2.0...v1.3.0) (2025-10-22)
 
 
