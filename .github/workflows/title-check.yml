@@ -1,10 +1,15 @@
-name: PR Title Check
+name: ✏️ PR Title Check
 
 on:
   pull_request:
-    types: [opened, edited, reopened, synchronize, ready_for_review]
+    types: [opened, edited, reopened, ready_for_review]
     branches: [main, stage]
+
+permissions:
+  issues: write
+  pull-requests: write
 
 jobs:
   validate-title:
-    uses: yourorg/.github/.github/workflows/title-validation.yml@main
+    name: 📝 Validate PR Title
+    uses: nenoyago/.github/.github/workflows/title-validation.yml@main
