@@ -7,4 +7,4 @@ on:
 
 jobs:
   validate-title:
-    uses: yourorg/.github/.github/workflows/title-validation.yml@main
+    uses: nenoyago/.github/.github/workflows/title-validation.yml@main
