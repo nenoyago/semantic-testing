@@ -7,4 +7,5 @@ on:
 
 jobs:
   validate-title:
+    name: Validate PR Title ✏️
     uses: nenoyago/.github/.github/workflows/title-validation.yml@main
