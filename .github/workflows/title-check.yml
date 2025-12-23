@@ -1,4 +1,4 @@
-name: ✏️ Run PR Title Check
+name: ✏️ PR Title Check
 
 on:
   pull_request:
@@ -11,5 +11,5 @@ permissions:
 
 jobs:
   validate-title:
-    name: ✏️ Validate PR Title
-    uses: nenoyago/.github/.github/workflows/pr-title-validation.yml@main
+    name: 📝 Validate PR Title
+    uses: nenoyago/.github/.github/workflows/title-validation.yml@main
