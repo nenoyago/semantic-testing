@@ -1,0 +1,10 @@
+name: PR Title Check
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize, ready_for_review]
+    branches: [main, stage]
+
+jobs:
+  validate-title:
+    uses: yourorg/.github/.github/workflows/title-validation.yml@main
